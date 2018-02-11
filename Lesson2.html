@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<html>
+  <head>
+    <title>Lesson 2</title>
+    <link href="CSS/style.css" type="text/css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+        <div class="container">
+            <div class="title">
+              <h1>LMASS Coding Club</h1>
+            </div>
+            <nav>
+              <a id="home" href="index.html">Home</a>
+            </nav>
+            <h2 id="topthing">Lesson 2</h2>
+        </div>
+
+    </header>
+    <div class="container">
+
+        <div class="mainArea">
+          <h2>The Basics</h2>
+					<div class="lesson">
+						<h3>Syntax</h3>
+						<div class="section">
+							<p id="lesson">
+		              Java, like many other coding languages, is case sensitive.
+                  This means that it matters if you use capital or lowercase letters.
+                  Java needs everything to stay consistent, if not the program will
+                  not recognize what you have written. For example, if you declare a variable
+                  “double pi = 3.14;” the variable “pi” must stay lowercase or it will not be
+                  recognized. We will touch more on this later what the meaning of double is and
+                  the different datatypes.
+		          </p>
+              <a>
+								<img id src="Images/hello.png" width="325px" height="215px"/>
+							</a>
+						</div>
+
+						<h3>Classes</h3>
+						<div class="section">
+							<p id="lesson">
+		              A class is nothing but a blueprint or a template for creating
+                  things which define its properties and behaviors. You would
+                  write your code in the main() method which is in a class.
+                  Declaring a class would look something like this:
+		          </p>
+              <a>
+								<img id src="Images/class.png" width="300px" height="200px"/>
+							</a>
+
+              <div class="code">
+                <h5 id="code">public class Class_Name {</h5>
+                <h5 style="text-indent: 40px" id="code">public static void main(String args[]) {<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">  //your code here<br /><br /></h5>
+                <h5 style="text-indent: 40px" id="code">}</h5>
+                <h5 id="code">}</h5>
+              </div>
+
+              <p id="lesson">
+                You will notice in my previous example there is a piece of code that says “public static void
+                main(String[] args)”. Every java program has to have this, otherwise your code will not work. This basically
+                acts as a place for you to write your code. You can see there are different qualifiers written in front
+                of the main() method. The qualifier “public” means this accessible across methods. “static” means it belongs
+                 to the entire class. “void” means it will not return a value. And as for main(), it is an entry point for your code.
+                  You MUST name it “main” or your code will not run.
+              </p>
+
+						</div>
+
+						<h3>Whitespace</h3>
+						<div class="section">
+							<p id="lesson">
+                Your code must be easy to read, which is why I want to talk about whitespace. When I say “whitespace”,
+                essentially what I am talking about is how your code is written. In order for your code to be coherent to
+                yourself and others, it is important to leave space between code. For example if your code is written like this:
+		          </p>
+              <a>
+								<img id src="Images/white.png" width="350px" height="200px"/>
+							</a>
+
+              <div class="code">
+                <h5 id="code">public class Whitespace {</h5>
+                <h5 style="text-indent: 40px" id="code">public static void main(String args[]) {</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">int num1 = 5;</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">int num2 = 4;</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">int num3 = num1 + num2;</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">System.out.println(num1);</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">System.out.println(num2);</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">System.out.println(num3);</h5>
+                <h5 style="text-indent: 40px" id="code">}</h5>
+                <h5 id="code">}</h5>
+              </div>
+
+              <p id="lesson">
+                This is what we call bad code. It’s bad because it’s is not very clear to the user.
+                This is why it is important to use whitespace; in order to make it look neat!
+                For example:
+		          </p>
+
+              <div class="code">
+                <h5 id="code">public class Whitespace {</h5>
+                <h5 style="text-indent: 40px" id="code">public static void main(String args[]) {<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">int num1 = 5;</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">int num2 = 4;</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">int num3 = num1 + num2;<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">System.out.println(num1);</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">System.out.println(num2);</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">System.out.println(num3);<br /><br /></h5>
+                <h5 style="text-indent: 40px" id="code">}</h5>
+                <h5 id="code">}</h5>
+              </div>
+
+              <p id="lesson">
+                It’s easier to see because the int declarations are separated from the outputs. While this is
+                all well and good, there is such a thing as too much white space. You don’t want your code to
+                be too spread out as it will look unorganized. For example:
+		          </p>
+
+              <div class="code">
+                <h5 id="code">public class Whitespace {</h5>
+                <h5 style="text-indent: 40px" id="code">public static void main(String args[]) {<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">int num1 = 5;<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">int num2 = 4;<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">int num3 = num1 + num2;<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">System.out.println(num1);<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">System.out.println(num2);<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">System.out.println(num3);<br /><br /></h5>
+                <h5 style="text-indent: 40px" id="code">}</h5>
+                <h5 id="code">}</h5>
+              </div>
+
+              <p id="lesson">
+                This is another example of bad code as the lines are too spaced out!
+		          </p>
+
+						</div>
+
+            <h3>A Basic Output</h3>
+						<div class="section">
+							<p id="lesson">
+                From the last example you’ve seen me use a command that looks like this:
+		          </p>
+              <a>
+								<img id src="Images/hello-world.png" width="300px" height="200px"/>
+							</a>
+
+              <div class="code">
+                <h5 id="code">System.out.println()</h5>
+              </div>
+
+              <p id="lesson">
+              This is used to output something to the user and end the line whether
+              it is a variable or just a couple words. To output a word you would
+              write your word in quotation marks within the parentheses. For example:
+		          </p>
+
+              <div class="code">
+                <h5 id="code">public class MyFirstWords {</h5>
+                <h5 style="text-indent: 40px" id="code">public static void main(String args[]) {<br /><br /></h5>
+                <h5 style="text-indent: 80px"id="code">System.out.println("Hello World!");<br /><br /></h5>
+                <h5 style="text-indent: 40px" id="code">}</h5>
+                <h5 id="code">}</h5>
+              </div>
+
+              <p id="lesson">
+                This line of code will output Hello World!
+		          </p>
+
+              <p id="lesson">
+                There are other commands to output, such as the System.out.print() command,
+                where this will output something and will not end the line. For example if you
+                 made this program:
+		          </p>
+
+              <div class="code">
+                <h5 id="code">public class MySecondWords {</h5>
+                <h5 style="text-indent: 40px" id="code">public static void main(String args[]) {<br /><br /></h5>
+                <h5 style="text-indent: 80px"id="code">System.out.print("Wow")</h5>
+                <h5 style="text-indent: 80px"id="code">System.out.print("so cool");<br /><br /></h5>
+                <h5 style="text-indent: 40px" id="code">}</h5>
+                <h5 id="code">}</h5>
+              </div>
+
+              <p id="lesson">
+                It will output “Wow so cool!” to the user, instead of putting them on different lines. If you
+                used the System.out.println() command, your code would have outputted "Wow" on one line, and
+                "so cool!" on then next line!
+		          </p>
+
+
+						</div>
+
+					</div>
+      <h2 class="footer">The Basics</h2>
+        </div>
+    </div>
+  </body>
+</html>

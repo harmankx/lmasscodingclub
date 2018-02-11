@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<html>
+  <head>
+    <title>Lesson 7</title>
+    <link href="CSS/style.css" type="text/css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+        <div class="container">
+            <div class="title">
+              <h1>LMASS Coding Club</h1>
+            </div>
+            <nav>
+              <a id="home" href="index.html">Home</a>
+            </nav>
+            <h2 id="topthing">Lesson 7</h2>
+        </div>
+
+    </header>
+    <div class="container">
+
+        <div class="mainArea">
+          <h2>Methods</h2>
+					<div class="lesson">
+						<h3>Methods</h3>
+						<div class="section">
+							<p id="lesson">
+                What are Methods? A method is a collection of statements that can be executed when called by name. Another way to think
+                of a method is a mini program separated from the main program until called inside the main method (Note: Methods should always be written outside of the
+                "main" method). There are two types of methods: one that returns
+                a value and one that does not. A method that returns a value must have a data type, for example ”int”, “double”, etc. Let’s say you want to create an
+                integer method named “fivePlusSeven” that added 5 and 7 and returned the value, you would write that like this:
+		          </p>
+
+							<a>
+								<img id src="Images/function.png" width="300px" height="300px"/>
+							</a>
+
+              <div class="code">
+                <h5 id="code">static int fivePlusSeven() {</h5>
+                <h5 style="text-indent: 40px" id="code">int sum = 5 + 7;<br /><br /></h5>
+                <h5 style="text-indent: 40px" id="code" id="pad">return sum;</h5>
+                <h5 id="code">}</h5>
+              </div>
+
+              <p id="lesson">
+                In this case, return means it will produce the value of “sum”, a.k.a 12. Calling it in the main method looks something like this :
+              </p>
+
+              <div class="code">
+                <h5 id="code">public static void main(String args[]) {</h5>
+                <h5 style="text-indent: 40px" id="code">System.out.println(fivePlusSeven()); //prints the value 12</h5>
+                <h5 id="code">}</h5>
+              </div>
+
+              <p id="lesson">
+                The other method, the one that does not return a value, does not need to be declared with a data type. Instead, it must be declared
+                with the keyword “void”, as it will not produce any value at the end. It is recommended that you do not use this version when evaluating numbers.
+                 An example for using this type of method would be printing a series of strings. Let's say you want to make a void method named “iLoveCS” that
+                 prints three strings on different lines, you would write it like this:
+              </p>
+
+              <div class="code">
+                <h5 id="code">static void iLoveCS() {</h5>
+                <h5 style="text-indent: 40px" id="code">System.out.println("I");</h5>
+                <h5 style="text-indent: 40px" id="code">System.out.println("Love");</h5>
+                <h5 style="text-indent: 40px" id="code">System.out.println("Computer Science");</h5>
+                <h5 id="code">}</h5>
+              </div>
+
+              <p id="lesson">
+                Notice there is not a “return” command, that’s because there is no value to return but rather there are commands to execute. Calling it in the main method would look like this:
+              </p>
+
+              <div class="code">
+                <h5 id="code">public static void main(String args[]) {</h5>
+                <h5 style="text-indent: 40px" id="code">iLoveCS();</h5>
+                <h5 id="code">}</h5>
+              </div>
+						</div>
+
+						<h3>Modifiers</h3>
+						<div class="section">
+
+							<p id="lesson">
+                There are a few modifiers you need to know about. Modifiers are essentially levels of accessibility for variables and methods.
+                Some modifiers that are useful include: public, static, and void. Public means the method can be accessed through classes. Static means
+                the method is not associated with any particular instance of the program but rather can be accessed at any point. Void means that the method
+                produces no end value.<br /><br />
+
+                You can also set parameters in your method. Parameters are values/variables that are being passed into the method. They are written in
+                the parentheses of the method. For example, if you want to make a method that adds two numbers that you’ve assigned in your main method, it would
+                look something like this:
+		          </p>
+
+              <a>
+                <img id src="Images/member.png" width="300px" height="125px"/>
+              </a>
+
+
+              <div class="code">
+                <h5 id="code">public class Methods {</h5>
+                <h5 style="text-indent: 40px" id="code">public static void main(String args[]) {<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">int firstNum = 5;</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">int secondNum = 16;</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">System.out.println(addTwoNumbers(firstNum,secondNum));</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">//firstNum and secondNum are passed into the method</h5>
+                <h5 style="text-indent: 40px" id="code">}<br /><br /></h5>
+                <h5 style="text-indent: 40px"id="code">public static int addTwoNumbers(int num1, int num2) {</h5>
+                <h5 style="text-indent: 80px" id="code">int sum = num1 + num2;</h5>
+                <h5 style="text-indent: 80px" id="code">//equivalent of firstNum + secondNum</h5>
+                <h5 style="text-indent: 80px" id="code">return sum;</h5>
+                <h5 style="text-indent: 40px" id="code">}</h5>
+                <h5 id="code">}</h5>
+              </div>
+            </div>
+						</div>
+            <h2 class="footer">Methods</h2>
+					</div>
+        </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<html>
+  <head>
+    <title>Lesson 3</title>
+    <link href="CSS/style.css" type="text/css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+        <div class="container">
+            <div class="title">
+              <h1>LMASS Coding Club</h1>
+            </div>
+            <nav>
+              <a id="home" href="index.html">Home</a>
+            </nav>
+            <h2 id="topthing">Lesson 3</h2>
+        </div>
+
+    </header>
+    <div class="container">
+
+        <div class="mainArea">
+          <h2>Variables and User Input</h2>
+					<div class="lesson">
+						<h3>Variables</h3>
+						<div class="section">
+							<p id="lesson">
+                A variable is a storage location, where you are able to store values into.
+                Variables have data types, meaning they have classifications which define those
+                variables, for examples one variable may only store integers, while another may
+                only store decimals or Strings. The different primitive, or simple, data types
+                include:
+		          </p>
+              <a>
+								<img id src="Images/variable.jpg" width="300px" height="200px"/>
+							</a>
+
+              <p id="lesson">
+                int: This is the type of variable that only stores integers. Ex. 1 or 4 or 245843 <br /><br />
+                double: This is the type of variable that stores decimals Ex. 3.1415 or 43.654764 <br /><br />
+                boolean: This data type stores whether something is either true or false Ex. boolean cool = true; <br /><br />
+                char: This stores only singular letters Ex. a, or e, or i, or g <br />
+              </p>
+
+              <p id="lesson">
+                There is another data type known as a String that stores sentences, however this is a complex data type and I will go more in depth with this concept in future lessons.
+              </p>
+
+              <p id="lesson">
+               To declare a variable, you must use the following format: <br /><br /> datatype variableName = variableValue;<br /><br /> For example:
+              </p>
+
+              <div class="code">
+                <h5 id="code">public class Variables {</h5>
+                <h5 style="text-indent: 40px" id="code">public static void main(String args[]) {<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad"> int x = 15;</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad"> double pi = 3.14159265;</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad"> boolean on = true;</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad"> char letter = 't';<br /><br /></h5>
+                <h5 style="text-indent: 40px" id="code">}</h5>
+                <h5 id="code">}</h5>
+              </div>
+
+						</div>
+
+						<h3>Printing Variables</h3>
+						<div class="section">
+
+							<p id="lesson">
+		             To print out a variable, we go back to the command System.out.println(), but this time
+                 there is one difference. To output a variable to the user you MUST NOT put in parentheses,
+                 however you should put it in the brackets. For example:
+		          </p>
+
+              <a>
+								<img id src="Images/print.gif" width="300px" height="225px"/>
+							</a>
+
+
+              <div class="code">
+                <h5 id="code">public class Variables {</h5>
+                <h5 style="text-indent: 40px" id="code">public static void main(String args[]) {<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad"> int x = 15;</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad"> double pi = 3.14159265;</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad"> boolean on = true;</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad"> char letter = 't';<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad"> System.out.println(x);</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad"> System.out.println(pi);</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad"> System.out.println(on);</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad"> System.out.println(letter);<br /><br /></h5>
+                <h5 style="text-indent: 40px" id="code">}</h5>
+                <h5 id="code">}</h5>
+              </div>
+
+              <p id="lesson">
+		             These print statements will print out whatever is in the variables, isn't that neat!
+		          </p>
+
+						</div>
+
+            <h3>Concatenation</h3>
+						<div class="section">
+
+							<p id="lesson">
+                Concatenation is how you can combine strings and/or variables together which can prove
+                to be useful in print statements!. To do this we can use the “+” operator within the brackets
+                of a print command in combination with another string or variable. For example:
+
+		          </p>
+
+              <a>
+								<img id src="Images/concat.png" width="275px" height="175px"/>
+							</a>
+
+
+              <div class="code">
+                <h5 id="code">public class Concat {</h5>
+                <h5 style="text-indent: 40px" id="code">public static void main(String args[]) {<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad"> int apples = 6;</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad"> System.out.println("There are " + apples + " apples!");<br /><br /></h5>
+                <h5 style="text-indent: 40px" id="code">}</h5>
+                <h5 id="code">}</h5>
+              </div>
+
+						</div>
+
+            <h3>User Input</h3>
+            <div class="section">
+
+              <p id="lesson">
+                We have talked about outputs and how to output things to the user.
+                Now we will talk about how to receive input from the user and how
+                we can use this information in things such as assigning values to a
+                variable. First we must import the Scanner library:
+              </p>
+
+              <a>
+								<img id src="Images/input.PNG" width="275px" height="175px"/>
+							</a>
+
+
+              <div class="code">
+                <h5 id="code"><mark>import java.util.Scanner;</mark></h5>
+                <h5 id="code">public class UserInput {</h5>
+                <h5 style="text-indent: 40px" id="code">public static void main(String args[]) {<br /><br /></h5>
+                <h5 style="text-indent: 40px" id="code">}</h5>
+                <h5 id="code">}</h5>
+              </div>
+
+              <p id="lesson">
+                Next we are going to declare a Scanner, which is what we use to receive input from the user:
+              </p>
+
+              <div class="code">
+                <h5 id="code">import java.util.Scanner;</h5>
+                <h5 id="code">public class UserInput {</h5>
+                <h5 style="text-indent: 40px" id="code">public static void main(String args[]) {<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code"><mark>Scanner input = new Scanner(System.in);</mark><br /><br /></h5>
+                <h5 style="text-indent: 40px" id="code">}</h5>
+                <h5 id="code">}</h5>
+              </div>
+
+              <p id="lesson">
+                Note how this declaration of a Scanner is written. We can refer back to variables to understand this more. In
+                a sense, this follows the "datatype variableName = variableValue;" format we looked at before, where Scanner
+                is the datatype, input is the name of the variable, and "new Scanner(System.in);" is the value of the variable. <br /><br />
+
+                It is "new Scanner(System.in)" because we are declaring a brand new scanner variable that can take in user input. If we look
+                at "System.in", we see that it looks very simmilar to "System.out.println()", this is because System.out is an output stream that
+                outputs to the program, while System.in is an input stream which brings data into the program from the user. <br /><br />
+
+                To set a variable to accept user input, we must utilize the Scanner variable "input" we have created. There are different ways
+                to recieve user input depending on the datatype for the variable. This is a list of the commands:<br /><br />
+
+                intVarible.nextInt() - if you want the user to input an integer <br /><br />
+                doubleVariable.nextDouble() - if you want the user to input a double <br /><br />
+                booleanvariable.nextBoolean - if you want the user input a boolean value <br /><br />
+
+                Let’s say you want to make a program that asks for the amount of apples the user has. It would be written as follows:
+              </p>
+
+              <div class="code">
+                <h5 id="code">import java.util.Scanner;</h5>
+                <h5 id="code">public class Apples {</h5>
+                <h5 style="text-indent: 40px" id="code">public static void main(String args[]) {<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code">Scanner input = new Scanner(System.in);</h5>
+                <h5 style="text-indent: 80px" id="code">int apples;<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code">System.out.print("How many apples do you have? ");</h5>
+                <h5 style="text-indent: 80px" id="code">apples = input.nextInt();</h5>
+                <h5 style="text-indent: 80px" id="code">System.out.print("You have " + apples + " apples!");</h5>
+                <h5 style="text-indent: 40px" id="code">}</h5>
+                <h5 id="code">}</h5>
+              </div>
+
+              <p id="lesson">
+                When executed, this program will first ask how many apples the user has, and then the user will
+                be able to input a value. This value will be then assigned to the varible "apples" through the ".nextInt()" function.
+                We then print to the user that they have the amount of apples that they entered by using concatenation.
+              </p>
+
+            </div>
+
+					</div>
+          <h2 class="footer">Variables and User Input</h2>
+        </div>
+    </div>
+  </body>
+</html>

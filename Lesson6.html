@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<html>
+  <head>
+    <title>Lesson 6</title>
+    <link href="CSS/style.css" type="text/css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+        <div class="container">
+            <div class="title">
+              <h1>LMASS Coding Club</h1>
+            </div>
+            <nav>
+              <a id="home" href="index.html">Home</a>
+            </nav>
+            <h2 id="topthing">Lesson 6</h2>
+        </div>
+
+    </header>
+    <div class="container">
+
+        <div class="mainArea">
+          <h2>Strings and Chars</h2>
+					<div class="lesson">
+						<h3>Writing text and their commands</h3>
+						<div class="section">
+							<p id="lesson">
+                Strings and characters are datatypes which allow the programmer to utilize words or letters and assign them to variables. By using the String datatype,
+                users can type in words or sentences, which through many different commands can be altered and read by the program. Declaring a String datatype is no different
+                from declaring previous datatypes such as integers. The only difference there is is what is assigned to the variable. The following code outlines the difference.
+		          </p>
+              <a>
+                <img id src="Images/string1.png" width="300px" height="200px"/>
+              </a>
+
+              <div class="code">
+                <h5 id="code">public class Strings {</h5>
+                <h5 style="text-indent: 40px" id="code">public static void main(String args[]) {<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">int num = 1;</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">String sentence = "Hello, World. This is a String";</h5>
+                <h5 style="text-indent: 40px" id="code">}</h5>
+                <h5 id="code">}</h5>
+              </div>
+
+              <p id="lesson">
+                As you can see, when Strings are declared you assign letters or words to them which are in quotation marks. Below I will list several commands that can be
+                used with Strings or chars. Run the code and change the variables in the print statement to see what each really does.
+		          </p>
+
+              <div class="code">
+                <h5 id="code">public class Commands {</h5>
+                <h5 style="text-indent: 40px" id="code">public static void main(String args[]) {<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">String name, nameSub, nameSub2, nameLower, nameUpper, nameTrim, nameRep, nameRepAll;</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">boolean nameCompare, nameCompareIgnore;</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">char charAt;<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">name = "Michael Smith";</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">// regular string<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">nameSub = name.substring(3);</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">// removes the first 3 characters<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">nameSub2 = name.substring(5,7);<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">// removes all characters except for the ones in the range provided (5th character to 7th character)<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">nameLower = name.toLowerCase();</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">// converts string to lowercase<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">nameUpper = name.toUpperCase();</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">// converts string to UPPERCASE<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">nameTrim = name.trim();</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">// trims the spaces in front and behind the string<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">nameRep = name.replaceFirst("i", "z");</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">//replaces the first occurrence of the string provided with the second string provided<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">nameRepAll  = name.replaceAll("i", "z");</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">//replaces all occurrences of the first string provided with the second<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">nameCompare = name.equals("michael smith");</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">// compares two strings, returns a boolean value<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">nameCompareIgnore = name.equalsIgnoreCase("michael smith");</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">// compares two strings and ignores CAPITALIZATION, returns a boolean value<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">charAt = name.charAt(0);</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">// returns the letter at the specified index<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">System.out.println(name);</h5>
+                <h5 style="text-indent: 40px" id="code">}</h5>
+                <h5 id="code">}</h5>
+              </div>
+
+						</div>
+
+						</div>
+            <h2 class="footer">Strings and Chars</h2>
+					</div>
+        </div>
+    </div>
+  </body>
+</html>

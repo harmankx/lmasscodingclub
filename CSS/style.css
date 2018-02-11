@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica', sans-serif;
+  color: #070E16;
+  background-image: url("../Images/Sayagata-400px.png");
+}
+
+h1 {
+  color: #f7f7f7;
+  text-shadow: 2px 2px black;
+}
+
+.container {
+  max-width: 960px;
+  min-width: 960px;
+  width: 96%;
+  margin: auto;
+}
+
+/*---TOP HEADER---*/
+header {
+  margin-left:auto;
+  margin-right:auto;
+  background-image: url("../Images/treebw.png");
+  background-repeat: no-repeat;
+  background-position:center;
+  min-width: 680px;
+  height: 500px;
+  width: 100%;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.title {
+  float: left;
+}
+
+nav {
+  float: right;
+  line-height: 70px;
+}
+
+nav a{
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 20px;
+  margin-left: 30px;
+  line-height: normal;
+  color: #3B3738;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  text-align: center;
+}
+
+nav a:hover {
+  background: darkgrey;
+  color: white;
+  box-shadow: 2px 2px 4px black;
+}
+
+#topthing {
+  text-align: center;
+  font-size: 50pt;
+  clear:both;
+  padding-top: 75px;
+  color: #f7f7f7;
+  text-shadow: 2px 2px black;
+}
+/*---MAIN AREA---*/
+
+
+.mainArea h2 {
+  text-align: center;
+  background:linear-gradient(grey, #f6f6f6);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  box-shadow: 3px 3px 4px black;
+
+}
+
+.mainArea p {
+  float: left;
+  background: linear-gradient(lightgrey, white);
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+  height: 500px;
+  box-shadow: inset 1px 3px 3px #6d6c6c;
+}
+
+.mainArea ul {
+  font-weight: bold;
+  float: right;
+  width: 400px;
+  height: 500px;
+  background: linear-gradient(lightgrey, white);
+  padding: 20px;
+  border-radius: 5px;
+  list-style: none;
+  box-shadow: inset 1px 3px 3px #6d6c6c ;
+}
+
+.mainArea #indent {
+  font-weight: normal;
+  list-style: circle;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+/*---FOOTER---*/
+.mainArea h2.footer {
+  text-align: center;
+  background:linear-gradient(#f6f6f6, grey);
+  border-radius: 5px;
+  padding: 10px;
+  clear:both;
+  box-shadow: 3px 3px 4px black;
+}
+
+/*---LESSON !---*/
+.lesson, .lesson2 {
+  float: left;
+  background: linear-gradient(lightgrey, white);
+  padding: 20px;
+  border-radius: 5px;
+  width: auto;
+  height: auto;
+  box-shadow: inset 1px 3px 3px #6d6c6c;
+}
+
+.section {
+  float: left;
+  background: linear-gradient(lightgrey, white);
+  padding: 20px;
+  border-radius: 5px;
+  width: auto;
+  height: auto;
+  box-shadow: inset 1px 3px 3px #6d6c6c;
+  margin-bottom: 20px;
+}
+.section p {
+  width: 60%;
+}
+#lesson {
+  float: left;
+  height: auto;
+  background: none;
+  padding: 0px;
+  list-style: none;
+  box-shadow: none;
+}
+
+img {
+  display:inline-block;
+  float: right;
+}
+h4 {
+  padding-top: 100px;
+}
+
+#pad {
+  font-size: 100px;
+}
+
+.code h5{
+  float: left;
+  padding-left: 20px;
+  width: 60%;
+  margin: 0px;
+}

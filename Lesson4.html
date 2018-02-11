@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<html>
+  <head>
+    <title>Lesson 4</title>
+    <link href="CSS/style.css" type="text/css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+        <div class="container">
+            <div class="title">
+              <h1>LMASS Coding Club</h1>
+            </div>
+            <nav>
+              <a id="home" href="index.html">Home</a>
+            </nav>
+            <h2 id="topthing">Lesson 4</h2>
+        </div>
+
+    </header>
+    <div class="container">
+
+        <div class="mainArea">
+          <h2>Conditionals</h2>
+					<div class="lesson">
+						<h3>The If Statement</h3>
+						<div class="section">
+							<p id="lesson">
+                Now let’s talk about if statements. If statements are called conditionals.
+                They are used to check if a condition is true or false, and will execute
+                statements or commands depending on the scenario. If statements can be
+                categorized into 4 types: if, if-else, if-else-if, and nested if.<br /><br />
+
+                An if statement will check if a statement is true. For example, if 35
+                is less than 45 then I would like to output, “35 is less than 45”. In code
+                it would look something like this:
+		          </p>
+
+              <a>
+								<img id src="Images/if.jpg" width="350px" height="200px"/>
+							</a>
+
+              <div class="code">
+                <h5 id="code">public class If_Statement {</h5>
+                <h5 style="text-indent: 40px" id="code">public static void main(String args[]) {<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">int num1 = 35;</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">int num2 = 45;<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">if (num1 < num2) {    //If 35 < 45 then execute the code below;</h5>
+                <h5 style="text-indent: 120px" id="code" id="pad">System.out.println( num1 + " is less than " + num2);</h5>
+                <h5 style="text-indent: 80px" id="code">}</h5>
+                <h5 style="text-indent: 40px" id="code">}</h5>
+                <h5 id="code">}</h5>
+              </div>
+						</div>
+
+						<h3>The If-Else Statement</h3>
+						<div class="section">
+
+							<p id="lesson">
+                An if-else statement will execute one block of code if something is true, otherwise it will execute another.
+                Let’s say I wanted make a program that would check to see if a variable was equal to 11, I want to output “This number is 11”,
+                otherwise I want to output “This number is not 11”. When written in code it would look similar to this:
+		          </p>
+
+              <a>
+								<img id src="Images/ifelse.jpg" width="250px" height="325px"/>
+							</a>
+
+
+              <div class="code">
+                <h5 id="code">public class If_Else {</h5>
+                <h5 style="text-indent: 40px" id="code">public static void main(String args[]) {<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">int num = 12;<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">if (num == 11) {</h5>
+                <h5 style="text-indent: 120px" id="code" id="pad">System.out.println("This number is 11");</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">} else {     //any condition other than when variable num = 11</h5>
+                <h5 style="text-indent: 120px" id="code" id="pad">System.out.println("This number is not 11");</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">}</h5>
+                <h5 style="text-indent: 40px" id="code">}</h5>
+                <h5 id="code">}</h5>
+              </div>
+
+              <p id="lesson">
+                 When this is program is run, it will output "This number is not 11", as the program first checked whether the num variable has a value of 11,
+                 and since it does not, it moves on to the else which will run in any other case (if num is any value other than 11, it will jump to the else statement)
+              </p>
+
+            </div>
+
+            <h3>The Else-If Statement</h3>
+            <div class="section">
+
+              <p id="lesson">
+                An if statement can also be followed by an else if statement which can be used to check many conditions. An example would be checking if a number is under 50,
+                 over 50 or is equal to 50. You would write this program as follows:
+              </p>
+
+              <a>
+								<img id src="Images/elseifladder.png" width="300px" height="200px"/>
+							</a>
+
+
+              <div class="code">
+                <h5 id="code">public class Else_If {</h5>
+                <h5 style="text-indent: 40px" id="code">public static void main(String args[]) {<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">int num = 37;<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">if (num > 50) { </h5>
+                <h5 style="text-indent: 120px" id="code" id="pad">System.out.println("This number is greater than 50");</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">} else if (num < 50) {</h5>
+                <h5 style="text-indent: 120px" id="code" id="pad">System.out.println("This number is less than 50");</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">} else if (num == 50) {</h5>
+                <h5 style="text-indent: 120px" id="code" id="pad">System.out.println("This number is equal to 50");</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">}</h5>
+                <h5 style="text-indent: 40px" id="code">}</h5>
+                <h5 id="code">}</h5>
+              </div>
+
+            </div>
+
+            <h3>The Nested If</h3>
+            <div class="section">
+
+              <p id="lesson">
+                Finally it comes down to nested if statements. These are essentially if statements inside of if statements.
+                They are used when checking if a condition is true while another condition is true. An example program would be checking if a
+                number is greater than 100 and if it is check if it’s greater than 1000.
+
+              </p>
+
+              <a>
+								<img id src="Images/nestedif.gif" width="300px" height="200px"/>
+							</a>
+
+              <div class="code">
+                <h5 id="code">public class Nested_If {</h5>
+                <h5 style="text-indent: 40px" id="code">public static void main(String args[]) {<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">int num = 500;<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">if (num > 100) { </h5>
+                <h5 style="text-indent: 120px" id="code" id="pad">if (num > 1000) { </h5>
+                <h5 style="text-indent: 160px" id="code" id="pad">System.out.println("This number is greater than 1000");</h5>
+                <h5 style="text-indent: 120px" id="code" id="pad">} else if (num < 1000) {</h5>
+                <h5 style="text-indent: 160px" id="code" id="pad">System.out.println("This number is greater than 100 but less than 1000");</h5>
+                <h5 style="text-indent: 120px" id="code" id="pad">}</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">} else {</h5>
+                <h5 style="text-indent: 120px" id="code" id="pad">System.out.println("This number is less than or equal to 100");</h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">}</h5>
+                <h5 style="text-indent: 40px" id="code">}</h5>
+                <h5 id="code">}</h5>
+              </div>
+            </div>
+						</div>
+            <h2 class="footer">Conditionals</h2>
+					</div>
+        </div>
+    </div>
+  </body>
+</html>

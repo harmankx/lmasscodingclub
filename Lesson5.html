@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<html>
+  <head>
+    <title>Lesson 5</title>
+    <link href="CSS/style.css" type="text/css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+        <div class="container">
+            <div class="title">
+              <h1>LMASS Coding Club</h1>
+            </div>
+            <nav>
+              <a id="home" href="index.html">Home</a>
+            </nav>
+            <h2 id="topthing">Lesson 5</h2>
+        </div>
+
+    </header>
+    <div class="container">
+
+        <div class="mainArea">
+          <h2>Loops</h2>
+					<div class="lesson">
+						<h3>The While Loop</h3>
+						<div class="section">
+							<p id="lesson">
+                What are Loops? Well loops iterate a sequence of commands; they can loop for a certain amount of time, as long is something is true,
+                 or forever. There are 3 different types of loops: while loops, do while loops and for loops.
+		          </p>
+
+              <a>
+								<img id src="Images/while.png" width="300px" height="250px"/>
+							</a>
+
+              <p id="lesson">
+                The first type of loop is a while loop. While loops loop code as long as a certain condition is true. For example, as long as a variable is less than a number.
+                 A while loop could be written like so:
+		          </p>
+
+              <div class="code">
+                <h5 id="code">public class While_Loop {</h5>
+                <h5 style="text-indent: 40px" id="code">public static void main(String args[]) {<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">int num = 1;<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">while (num <= 10) {</h5>
+                <h5 style="text-indent: 120px" id="code" id="pad">System.out.println("This is a looping statement");</h5>
+                <h5 style="text-indent: 120px" id="code" id="pad">num++;</h5>
+                <h5 style="text-indent: 80px" id="code">}</h5>
+                <h5 style="text-indent: 40px" id="code">}</h5>
+                <h5 id="code">}</h5>
+              </div>
+
+              <p id="lesson">
+                This code will loop “This is a looping statement” and add 1 to num as long as num is less than or equal to 10.
+              </p>
+
+						</div>
+
+						<h3>The Do-While Loop</h3>
+						<div class="section">
+
+							<p id="lesson">
+                A Do while loop first executes the code once and then checks if the statement is true, if so it will continue to loop otherwise it would end there. It is written like this:
+		          </p>
+
+              <a>
+                <img id src="Images/dowhile.jpg" width="300px" height="250px"/>
+              </a>
+
+
+              <div class="code">
+                <h5 id="code">public class Do_While {</h5>
+                <h5 style="text-indent: 40px" id="code">public static void main(String args[]) {<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">int num = 1;<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">do {</h5>
+                <h5 style="text-indent: 120px" id="code" id="pad">System.out.println("This is a looping statement");</h5>
+                <h5 style="text-indent: 120px" id="code" id="pad">num++;</h5>
+                <h5 style="text-indent: 80px" id="code">} while (num <= 10);</h5>
+                <h5 style="text-indent: 40px" id="code">}</h5>
+                <h5 id="code">}</h5>
+              </div>
+
+              <p id="lesson">
+                This code will output the exact same thing as the while loop, but the only difference is that do loops will always run the code in the loop at least once, and then decide whether
+                to loop it or not, unlike while loops which will only execute the code if the condition is first met.
+              </p>
+
+            </div>
+
+            <h3>The For Loop</h3>
+            <div class="section">
+
+              <p id="lesson">
+                A for loop executes code for a certain amount of iterations which you can specify. It uses a initialized variable as
+                its starting point, then the condition, and finally the increment the variable increases/decreases at. For loops are written
+                in the format (initilaize variable; stopping point; increment). For example, the for loop that performs the same task as the previous loops looks something like this:
+              </p>
+
+              <a>
+                <img id src="Images/for_loop.jpg" width="300px" height="200px"/>
+              </a>
+
+
+              <div class="code">
+                <h5 id="code">public class For_Loop {</h5>
+                <h5 style="text-indent: 40px" id="code">public static void main(String args[]) {<br /><br /></h5>
+                <h5 style="text-indent: 80px" id="code" id="pad">for (int i = 0; i <= 10; i++) {</h5>
+                <h5 style="text-indent: 120px" id="code" id="pad">System.out.println("This is a looping statement");</h5>
+                <h5 style="text-indent: 80px" id="code">}</h5>
+                <h5 style="text-indent: 40px" id="code">}</h5>
+                <h5 id="code">}</h5>
+              </div>
+
+            </div>
+						</div>
+            <h2 class="footer">Loops</h2>
+					</div>
+        </div>
+    </div>
+  </body>
+</html>
